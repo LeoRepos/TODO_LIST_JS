@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/TODO_LIST_JS/style.css">
     <title>My Todo LIst</title>
 </head>
 <body>
-    <section class="mytodo_container">
+    <section class="mytodo-container">
         <!-- Create Form -->
-    <div class="mytodo_list">
-        <form action="javascript:void(0);" id="CreateForm"><input type="text" id="add-task" placeholder="New Task"><input type="submit" @click="CreateTask()" value="Create"></form>
+    <div class="mytodo-list">
+        <form action="javascript:void(0);" id="CreateForm"><input type="text" id="add-task" placeholder="New Task"><input type="submit" onclick="CreateTask()" value="Create"></form>
         <!-- Update Form -->
-        <form action="javascripy:void(0);" id="UpdateForm"
-        <input type="text" id="update-task"><input type="submit" value="Update>" <a @click="CloseInput()" id ="close">&#10006</a></form>
+        <form action="javascript:void(0);" id="UpdateForm">
+        <input type="text" id="update-task"><input type="submit" value="Update"> <a onclick="CloseInput()" id ="close">&#10006;</a></form>
         <!-- Counter -->
         <p id="counter"></p>
         <!-- MyTodo List Table -->
         <table>
             <tr><th>My Todo List</th></tr>
-            <tbody id="mytodo-task"></tbody>
+            <tbody id="mytodo-tasks"></tbody>
         </table>
     </div>
-    </section>    
+    </section> 
+<script src="script.js"></script>
 </body>
 </html>
