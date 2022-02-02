@@ -8,17 +8,20 @@
 </head>
 <body>
     <section class="mytodo_container">
-        <!-- Create Form-->
+        <!-- Create Form -->
     <div class="mytodo_list">
-        <form action="javascript:void(0);" id="CreateForm"><input type="text" id="add-task" placeholder="New Task"><input type="submit" onclick="CreateTask()" value="Create"></form>
-        <!-- Update Form-->
-
-            
-        </form>
+        <form action="javascript:void(0);" id="CreateForm"><input type="text" id="add-task" placeholder="New Task"><input type="submit" @click="CreateTask()" value="Create"></form>
+        <!-- Update Form -->
+        <form action="javascripy:void(0);" id="UpdateForm"
+        <input type="text" id="update-task"><input type="submit" value="Update>" <a @click="CloseInput()" id ="close">&#10006</a></form>
+        <!-- Counter -->
+        <p id="counter"></p>
+        <!-- MyTodo List Table -->
+        <table>
+            <tr><th>My Todo List</th></tr>
+            <tbody id="mytodo-task"></tbody>
+        </table>
     </div>
-
-
-    </section>
-    
+    </section>    
 </body>
 </html>
